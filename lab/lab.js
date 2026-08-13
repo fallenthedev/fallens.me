@@ -113,12 +113,12 @@ function initTerminal() {
         break;
       case "support":
         print("support 𝔣𝔞𝔩𝔩𝔢𝔫 ♤ — totally optional, always appreciated.", "out-ok");
-        print("  patreon: https://www.patreon.com/FallenTheDev", "out-dim");
+        print("  patreon: https://patreon.fallens.me", "out-dim");
         print("  venmo:   https://venmo.com/FallenTheDev  (@FallenTheDev)", "out-dim");
         break;
       case "patreon":
         print("opening patreon ...", "out-ok");
-        setTimeout(() => window.open("https://www.patreon.com/FallenTheDev", "_blank"), 500);
+        setTimeout(() => window.open("https://patreon.fallens.me", "_blank"), 500);
         break;
       case "venmo":
         print("opening venmo ...", "out-ok");

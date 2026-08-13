@@ -176,7 +176,7 @@ Everything is hand-written, so changing things is straightforward:
 | github   | [github.com/FallenTheDev](https://github.com/FallenTheDev) |
 | discord  | FallenTheDev                                               |
 | email    | [fallenontiktok@gmail.com](mailto:fallenontiktok@gmail.com) |
-| patreon  | [patreon.com/FallenTheDev](https://www.patreon.com/FallenTheDev) |
+| patreon  | [patreon.fallens.me](https://patreon.fallens.me) |
 | venmo    | [@FallenTheDev](https://venmo.com/FallenTheDev)            |
 
 If you'd like to support what I make, Patreon and Venmo are both appreciated —
