@@ -105,14 +105,15 @@ fallens.me/
     └── lab.js          # typing terminal + pixel clock
 ```
 
-### spotlight: AuroraOS
+### spotlight: AuroraOS *(deprecated)*
 
 The big one. AuroraOS is a fake web-based operating system that runs entirely
 in the browser. It features custom websites, custom apps, a working file
 system, and much more — all built to feel like a real desktop environment.
 It's the project that taught me the most about JavaScript, UI, and how much
 detail goes into making something *feel* like a system rather than just a
-webpage.
+webpage. It's no longer in active development, but it still holds a special
+place as the project that taught me the most.
 
 ### spotlight: Horizon Wallpapers
 

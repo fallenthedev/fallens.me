@@ -248,6 +248,20 @@ ul.uses .item { color: var(--text); }
   ul.now .dt, ul.uses .cat { min-width: 100%; }
 }
 
+/* Project status badges */
+.status-deprecated {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #ff6b6b;
+  border: 1px solid #ff6b6b;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+}
+
 /* ===== Ad layout ===== */
 
 /* Three-column layout: left ad | content | right ad */
