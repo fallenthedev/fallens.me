@@ -114,6 +114,15 @@ It's the project that taught me the most about JavaScript, UI, and how much
 detail goes into making something *feel* like a system rather than just a
 webpage.
 
+### spotlight: Horizon Wallpapers
+
+A free digital wallpaper and customization storefront at
+[hw.fallens.me](https://hw.fallens.me). It offers wallpaper packs, app icons,
+folder icons, widgets, and themes — all browsable with subcategory filtering
+and downloadable as direct ZIP files. The kind of project that turns "I want
+to customize my desktop" into a few clicks instead of a deep dive through
+scattered forum posts.
+
 ### the lab terminal
 
 The `/lab` page has a fake shell you can type into. Try:
