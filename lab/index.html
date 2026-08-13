@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>lab // fallentheDev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="prompt" href="../index.html"><span class="user">fallentheDev</span>@home:~#</a>
+    <nav>
+      <a href="../index.html">~</a>
+      <a href="../projects/">projects</a>
+      <a href="../now/">now</a>
+      <a href="../uses/">uses</a>
+      <a href="../lab/">lab</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" style="border-top:none;">
+    <h1 id="typed"></h1>
+    <p class="sub">
+      <span class="hl">&gt;</span> little interactive toys written in plain
+      javascript. no frameworks, no build step — just vibes.
+    </p>
+  </section>
+
+  <!-- Typing terminal -->
+  <section id="terminal">
+    <h2>./terminal.sh</h2>
+    <p class="bio" style="margin-bottom:14px;">
+      a fake shell. type <span class="hl">help</span> to see what it understands.
+    </p>
+    <div id="term" class="term" tabindex="0">
+      <div id="term-out" class="term-out"></div>
+      <div class="term-line">
+        <span class="term-prompt">fallentheDev@lab:~$</span>&nbsp;<span id="term-input" class="term-input"></span><span class="term-cursor">&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pixel clock -->
+  <section id="clock">
+    <h2>./clock --pixel</h2>
+    <p class="bio" style="margin-bottom:14px;">
+      current time, drawn in little purple blocks. updates every second.
+    </p>
+    <div id="clock-grid" class="clock-grid" aria-label="pixel clock"></div>
+    <p class="bio" style="margin-top:14px; color:var(--muted); font-size:0.85rem;">
+      <span id="clock-text"></span>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    fallentheDev@home:~# logout <span class="pulse">_</span><br/>
+    built with html, css &amp; js — no frameworks, no tracking.
+  </div>
+</footer>
+
+<link rel="stylesheet" href="lab.css" />
+<script src="../script.js"></script>
+<script src="lab.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const target = document.getElementById("typed");
+    const text = "fallentheDev@home:~/lab#";
+    let i = 0;
+    target.innerHTML = "";
+    (function type() {
+      if (i <= text.length) {
+        target.innerHTML = text.slice(0, i) + '<span class="cursor">&nbsp;</span>';
+        i++;
+        setTimeout(type, 45 + Math.random() * 50);
+      } else {
+        target.innerHTML = text + '<span class="cursor">&nbsp;</span>';
+      }
+    })();
+  });
+</script>
+
+</body>
+</html>
