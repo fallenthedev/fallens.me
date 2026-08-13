@@ -1,0 +1,67 @@
+/* ===== Lab page styles ===== */
+
+/* Typing terminal */
+.term {
+  background: #06060a;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 0.92rem;
+  outline: none;
+  min-height: 220px;
+  max-height: 360px;
+  overflow-y: auto;
+  box-shadow: inset 0 0 30px rgba(124, 77, 255, 0.08);
+}
+.term:focus { border-color: var(--purple-dim); box-shadow: 0 0 14px var(--purple-glow), inset 0 0 30px rgba(124, 77, 255, 0.08); }
+
+.term-out { white-space: pre-wrap; word-break: break-word; }
+.term-out .out-line { color: var(--text); }
+.term-out .out-dim { color: var(--muted); }
+.term-out .out-err { color: #ff6b6b; }
+.term-out .out-ok { color: #b388ff; }
+.term-out .out-cmd { color: var(--purple); }
+.term-out .out-cmd::before { content: "$ "; color: var(--muted); }
+
+.term-line { display: flex; align-items: baseline; flex-wrap: wrap; }
+.term-prompt { color: var(--purple); font-weight: 700; white-space: nowrap; }
+.term-input { color: var(--text); white-space: pre; }
+.term-cursor {
+  display: inline-block;
+  width: 0.55ch;
+  background: var(--purple);
+  margin-left: 1px;
+  animation: blink 1s steps(2) infinite;
+  box-shadow: 0 0 8px var(--purple-glow);
+  align-self: center;
+}
+
+/* Pixel clock */
+.clock-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  padding: 14px;
+  background: #06060a;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.clock-cell {
+  width: 14px;
+  height: 22px;
+  background: #1a1a26;
+  border-radius: 2px;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+.clock-cell.on {
+  background: var(--purple);
+  box-shadow: 0 0 8px var(--purple-glow);
+}
+.clock-cell.dim {
+  background: #2a2a3a;
+}
+
+@media (max-width: 600px) {
+  .clock-cell { width: 10px; height: 16px; }
+  .clock-grid { gap: 3px; padding: 10px; }
+}
