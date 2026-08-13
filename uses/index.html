@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>uses // fallentheDev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="prompt" href="../index.html"><span class="user">fallentheDev</span>@home:~#</a>
+    <nav>
+      <a href="../index.html">~</a>
+      <a href="../projects/">projects</a>
+      <a href="../now/">now</a>
+      <a href="../uses/">uses</a>
+      <a href="../lab/">lab</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" style="border-top:none;">
+    <h1 id="typed"></h1>
+    <p class="sub">
+      <span class="hl">&gt;</span> the gear and tools i actually use. nothing
+      sponsored, nothing fancy.
+    </p>
+  </section>
+
+  <section id="hardware">
+    <h2>lscpu &amp;&amp; lsusb</h2>
+    <ul class="uses">
+      <li><span class="cat">computer</span> <span class="item">windows pc (everyday driver)</span></li>
+      <li><span class="cat">editor</span> <span class="item">vs code</span></li>
+      <li><span class="cat">terminal</span> <span class="item">powershell</span></li>
+      <li><span class="cat">browser</span> <span class="item"><a href="https://www.ecosia.org" target="_blank" rel="noopener">ecosia</a> (the one that plants trees)</span></li>
+    </ul>
+  </section>
+
+  <section id="software">
+    <h2>dpkg -l | grep daily</h2>
+    <ul class="uses">
+      <li><span class="cat">languages</span> <span class="item">python, html, css, javascript</span></li>
+      <li><span class="cat">vcs</span> <span class="item">git + github</span></li>
+      <li><span class="cat">design</span> <span class="item">pen &amp; paper, then straight to css</span></li>
+      <li><span class="cat">notes</span> <span class="item">random .txt files everywhere</span></li>
+    </ul>
+  </section>
+
+  <section id="vibe">
+    <h2>echo $VIBE</h2>
+    <ul class="uses">
+      <li><span class="cat">font</span> <span class="item">jetbrains mono (this very page)</span></li>
+      <li><span class="cat">theme</span> <span class="item">dark, purple accents, scanlines on</span></li>
+      <li><span class="cat">music</span> <span class="item">youtube or spotify</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    fallentheDev@home:~# logout <span class="pulse">_</span><br/>
+    built with html, css &amp; js — no frameworks, no tracking.
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const target = document.getElementById("typed");
+    const text = "fallentheDev@home:~/uses#";
+    let i = 0;
+    target.innerHTML = "";
+    (function type() {
+      if (i <= text.length) {
+        target.innerHTML = text.slice(0, i) + '<span class="cursor">&nbsp;</span>';
+        i++;
+        setTimeout(type, 45 + Math.random() * 50);
+      } else {
+        target.innerHTML = text + '<span class="cursor">&nbsp;</span>';
+      }
+    })();
+  });
+</script>
+
+</body>
+</html>
