@@ -1,2 +1,6 @@
 # editor / IDE
 .vscode/
+
+# project card generator (Electron app, not part of the site)
+project-tool/node_modules/
+project-tool/
