@@ -124,6 +124,20 @@ and downloadable as direct ZIP files. The kind of project that turns "I want
 to customize my desktop" into a few clicks instead of a deep dive through
 scattered forum posts.
 
+### spotlight: Codeduck *(wip)*
+
+An AI built specifically for coders. The goal is something that actually
+understands code, context, and the way developers work — not a generic
+chatbot wearing a programming coat of paint. Still in the works; details
+will land as it gets closer to usable.
+
+### spotlight: Sandlit *(wip)*
+
+A falling sand simulator with molten element states and alloy crafting. Drop
+materials into a grid and watch them interact — melt metals, combine them to
+make alloys like rose gold and steel, and tinker with chemistry and physics
+in real time. The kind of project that's equal parts toy and experiment.
+
 ### the lab terminal
 
 The `/lab` page has a fake shell you can type into. Try:

@@ -248,12 +248,33 @@ ul.uses .item { color: var(--text); }
   ul.now .dt, ul.uses .cat { min-width: 100%; }
 }
 
+/* Project card icon */
+.proj-icon {
+  width: 1.8em;
+  height: 1.8em;
+  vertical-align: middle;
+  margin-right: 6px;
+  border-radius: 3px;
+}
+
 /* Project status badges */
 .status-deprecated {
   display: inline-block;
   font-size: 0.7rem;
   color: #ff6b6b;
   border: 1px solid #ff6b6b;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+}
+.status-wip {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #ffd864;
+  border: 1px solid #ffd864;
   padding: 1px 6px;
   border-radius: 3px;
   margin-left: 8px;
